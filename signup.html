@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Create An Account</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container text-center">
+
+        <form class="text-center  p-5 form-common" action="">
+
+            <p class="h4 mb-4">Create An Account</p>
+
+            <div class="form-group">
+                <select type="text" class="form-control input-div" name="category" required="">
+                <option value="">United States</option>
+            </select>
+            </div>
+
+            <div class="form-row mb-4" style="margin-bottom:0 !important;">
+                <div class="col">
+                    <input type="text" id="first_name" class="form-control" placeholder="First Name">
+                </div>
+                <div class="col">
+                    <input type="text" id="last_name" class="form-control" placeholder="Last Name">
+                </div>
+            </div>
+
+            <input type="text" id="company_name" class="form-control" placeholder="Company Name">
+
+
+            <input type="email" id="email" class="form-control " placeholder="E-mail Address(this will be your username)">
+
+            <input type="password" id="password" class="form-control mb-2" placeholder="Password">
+
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="custom_check" name="customCheck">
+                <label class="custom-control-label" for="customCheck">Show Password</label>
+            </div>
+
+            <input type="text" id="Phone" class="form-control mt-2" placeholder="Phone Number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+
+            <input type="text" id="offer_code" class="form-control" placeholder="Offer Code" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+
+            <select type="text" class="form-control" name="category" required="">
+                <option value="">How did you hear about us?</option>
+            </select>
+
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="checkbox">
+                <label class="custom-control-label" for="termCheckBox">
+                    I have read & agree to the <a href="" target="_blank">Terms of Service</a> &<a href=""
+                        target="_blank"> Privacy Policy</a>.</label>
+            </div>
+
+            <button class="create_acnt_btn " type="submit">Create an account</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+
+</html>

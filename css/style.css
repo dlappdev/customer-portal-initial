@@ -1,0 +1,86 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.form-common {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    margin: auto;
+    margin-top: 60px !important;
+}
+
+.form-common .input-div {
+    position: relative;
+    box-sizing: border-box;
+    height: 40px !important;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.form-common .form-control:focus {
+    z-index: 2;
+}
+
+.form-common input,
+.form-common select {
+    margin-bottom: 10px;
+    border-radius: 0;
+    background-color: #ebebe6;
+}
+
+.form-common select {
+    margin-bottom: 10px;
+    background-color: #ebebe6;
+    height: 38px !important;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: black;
+}
+
+.form-signin-input-special {
+    margin-bottom: -2px !important;
+}
+
+.form-signin {
+    max-width: 330px !important;
+}
+
+.signin-input-div {
+    border: 2px solid #bfbfbf !important;
+    height: 43px !important;
+    padding: 10px;
+    font-size: 22px !important;
+    font-weight: 500 !important;
+}
+
+.font-weight-500 {
+    font-weight: 500 !important;
+}
+
+.font-weight-300 {
+    font-weight: 300 !important;
+}
+
+.create_acnt_btn {
+    border: 1px solid #ffffff;
+    background-color: #f8cbad;
+    border-radius: 0;
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 500 !important;
+}
+
+.custom-checkbox {
+    text-align: left !important;
+    margin-bottom: 5px !important;
+}
