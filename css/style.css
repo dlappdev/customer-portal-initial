@@ -1,6 +1,18 @@
 html,
 body {
     height: 100%;
+    width: 100%;
+    min-width: 100%;
+}
+
+.container-custom {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    min-width: 1200px;
+    min-height: 100%;
 }
 
 body {
@@ -83,4 +95,78 @@ body {
 .custom-checkbox {
     text-align: left !important;
     margin-bottom: 5px !important;
+}
+
+.btn-questtag {
+    color: white !important;
+    background-color: #05A4B5 !important;
+    width: 130px !important;
+}
+
+.btn-questtag-tab.active {
+    color: #191f28;
+    background-color: #e6e6e6;
+    border: 1px solid #cccccc;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.margin-left-10 {
+    margin-left: 10px;
+}
+
+.radius-0 {
+    border-radius: 0px;
+}
+
+.min-width-140 {
+    min-width: 140px;
+}
+
+.min-width-300 {
+    min-width: 300px;
+}
+
+.left-addon input {
+    padding-left: 30px;
+}
+
+.height-28 {
+    height: 28px;
+}
+
+.left-addon .fa-search {
+    left: 4px;
+}
+
+.inner-addon .fa-search {
+    position: absolute;
+    padding: 20px 10px 10px 10px;
+    pointer-events: none;
+}
+
+.questtag-search-input {
+    border-radius: 4px;
+    position: relative;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+.questtag-search-input input {
+    width: 100%;
+    padding-top: 5px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: #eeeeee;
+    outline: none;
+    background-color: transparent;
+    font-size: 11px;
+    margin-top: 14px
 }

@@ -1,0 +1,111 @@
+<!DOCTYPE.html>
+<html>
+
+<head>
+    <title>Order Table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/order.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container-custom">
+
+        <div class="order-div">
+            <div class="row">
+                <div class=col-md-4>
+
+                    <div class="float-left searchOrderInput pt-10 pr-25">
+                        <div class="questtag-search-input inner-addon left-addon pl-1" style="width: 200px;">
+                            <input type="text" class="height-28 " placeholder="Search" id="table_search">
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="col-md-8">
+                    <div class="pl-5 pr-1">
+
+                        <div class="float-right pl-20 pt-10">
+                            <div class="radius-0 min-width-140 mt-3">
+
+                                <a href="#order" class="btn btn-sm active  btn-questtag-tab min-width-140 font-size-12 " id="currentOrder">
+                                    Current  Orders
+                                </a>
+
+                                <a href="#courier" class="btn btn-sm questtag_default_btn  min-width-300 font-size-12 ">
+                                    <b>Send to courier</b>
+                                </a>
+
+                                <a role="button" data-toggle="modal" href="#" class=" btn btn-sm btn-questtag cursor-pointer min-width-120 font-size-12">
+                                    <i class="fa fa-plus float-left" style="line-height: 15px;padding: 3px;"></i> New Order
+                                </a>
+                                <a role="button" href="#" class="float-right btn btn-sm btn-questtag cursor-pointer min-width-120 font-size-12 margin-left-10">
+                                    <i class="fa fa-plus float-left" style="line-height: 15px;padding:3px;"></i> Excel Upload
+                                </a>
+
+
+
+
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <div class="table-container mt-2">
+                <div id="questtag_table" class="dataTables_wrapper no-footer table-wrapper">
+
+                    <table width="100%" id="order-table" class="cell-border datatable">
+                        <thead>
+                            <tr role="row">
+                                <th>Order No.</th>
+                                <th>Customer Name</th>
+                                <th>Pick-up</th>
+                                <th>Amount </th>
+                                <th>Distance</th>
+                                <th>Placement Time</th>
+                                <th>Est. Delivery Time</th>
+                                <th>Elapsed Time</th>
+                                <th>Driver</th>
+                                <th>Status</th>
+                                <th class="text-nowrap ">Order Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+</body>
+
+
+</html>
