@@ -1,0 +1,347 @@
+<!DOCTYPE.html>
+<html>
+
+<head>
+    <title>New Order</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/order.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/form_style.css">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery.timeselector.css">
+    <link href="css/all.min.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.timeselector.js"></script>
+    <script type="text/javascript" src="js/custom.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXQY-KLqCQKyr0XCSt-zaL87W9OfVrjwQ&amp;v=3.exp&amp;libraries=places,drawing,geometry"></script>
+</head>
+
+<body>
+ <!-------------top navber------------>
+ <div id="navber">  
+       
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color questtag-navber">
+ <div class="brand"> <a class="navbar-brand" href="#">QuestsTag</a></div>
+ 
+  <div class="collapse navbar-collapse menu-ber">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link btn btn-sm" href="#" class="">Welcome</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn-sm" href="#">Insights</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn-sm" href="#">Order</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn-sm" href="#">Shipment</a>
+      </li>
+      </ul>
+     </div>
+     <div class="collapse navbar-collapse menu-ber-2">
+          <ul class="navbar-nav mr-auto" style="">
+      <li class="nav-item active">
+        <a class="nav-link btn btn-sm QuestsTag-menu-btn" href="#">Reports
+        </a>
+      </li>
+  </ul>
+     </div>
+     <div class="collapse navbar-collapse icon-menu">
+
+    <div class="collapse navbar-collapse icon-menu">
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light">
+         <i class="fa fa-wrench fa-flip-horizontal"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light">
+         <i class="fa fa-question-circle"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light">
+         <i class="fa fa-user-circle"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+<!--/.Navbar -->
+
+<div class="container-custom">
+          
+  <div class="form-container w-80 mt-sm-2 mb-xl-5">
+
+    <div class="card m-1">
+      <div class="card-header form-header">
+             New Order
+        
+      </div>
+     <div class="card-body">
+        <form class="" action="" role="form" id="add_New_Order">
+
+          <div class="form-horizontal ml-30 mr-60 mb-5">
+
+                  <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group row  mb-2">
+                            <label for="inputorderNumber" class="col-sm-5 control-label text-right pb-2">
+                                <span class="ui-icon ui-icon-gear"></span> 
+                                    Order Number:&nbsp;<span style="color: #e279ad;">*</span></label>
+                            <div class="col-sm-7">
+                                <input type="number" name="orderNo" min="0" class="form-control form-control-sm" id="orderNumber" placeholder="Only Numeric Value" required="">
+                              
+                            </div>
+
+                        </div>
+                            </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                            <div class="col-sm-6">
+                             <div>
+                                Deliver to:
+
+                              </div>
+
+                        <div class="form-group row  mb-2">
+
+                            <label for="inputcustomerName" class="col-sm-5 control-label text-right">
+                                    Name:&nbsp;<span style="color: #e279ad;">*</span></label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control form-control-sm" id="customerName" placeholder="" required="">
+                            </div>
+                        </div>
+
+                        <div class="form-group  mb-2 row">
+                            <label for="inputcustomerPhone" class="col-sm-5 control-label text-right">
+                                    Phone No:&nbsp;<span style="color: #e279ad;">*</span></label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control form-control-sm" id="customerPhone" placeholder="" required="">
+                            </div>
+                        </div>
+
+                        <div class="form-group  mb-2 row">
+                            <label for="inputcustomerEmailr" class="col-sm-5 control-label text-right">
+                                    Email:&nbsp;<span style="color: #e279ad;">*</span></label>
+                            <div class="col-sm-7">
+                                <input type="email" class="form-control form-control-sm" name="customerEmail" id="customerEmail" placeholder="" required="">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group  mb-2 row">
+                            <label for="inputcustomerAddress" class="col-sm-5 control-label text-right">
+                                    Address:&nbsp;<span style="color: #e279ad;">*</span></label>
+                            <div class="col-sm-7">
+                                <textarea type="text" rows="2" class="autocomplete form-control form-control-sm address-auto" id="customerAddress" required="" data-toggle="address-autocomplete" placeholder="Enter a location"id="ac1"></textarea>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group  mb-2 row">
+                            <label for="inputDate" class="col-sm-5 control-label text-right">
+                                    Delivery Date:&nbsp;<span style="color: #e279ad;">*</span></label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control form-control-sm " id="datepicker" placeholder="" required="">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group  mb-2 row">
+                            <label for="inputDeliveryTime" class="col-sm-5 control-label text-right">
+                                    Delivery Time: &nbsp;<span style="color: #e279ad;">*</span></label>
+                            <div class="col-sm-7">
+
+                                <input type="text" class="form-control form-control-sm" id="timepicker" placeholder="" required="">
+                            </div>
+                        </div>
+
+                        
+                        <hr>
+                           <div>
+                                Pick-up Form:
+
+                                </div>
+                        <div class="form-group  mb-2 row">
+
+                            <label for="inputname" class="col-sm-5 control-label text-right">
+                                     Name:&nbsp;<span style="color: #e279ad;">*</span></label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control form-control-sm" id="Name" placeholder="" required="">
+                            </div>
+                        </div>
+
+                        <div class="form-group  mb-2 row pickup-only">
+                            <label for="inputPhone" class="col-sm-5 control-label text-right">
+                                     Phone No:&nbsp;</label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control form-control-sm" id="Phone" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="form-group  mb-2 row">
+                            <label for="inputOrder" class="col-sm-5 control-label text-right">
+                                     Address:&nbsp;<span style="color: #e279ad;">*</span></label>
+                            <div class="col-sm-7">
+                                <textarea type="text" rows="2" class="autocomplete form-control form-control-sm address-auto" id="customerAddress" data-toggle="address-autocomplete" placeholder="Enter a location"id="ac1" required=""></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group  mb-2 row">
+                            <label for="inputPickUpTime" class="col-sm-5 control-label text-right">
+                                    Pickup Time:&nbsp;<span style="color: #e279ad;">*</span></label>
+                            <div class="col-sm-7">
+
+                                <input type="text" class="form-control form-control-sm" id="timepicker" placeholder="" required="">
+                            </div>
+                        </div>
+
+                        
+                         </div>
+                            <div class="col-sm-6">
+
+                                    <div style="height: 22px;"></div>
+                        <div class="form-group  mb-2 row">
+                            <label for="inputItems" class="col-sm-5 control-label text-right">
+                                    Items:</label>
+                            <div class="col-sm-7 form-inline" id="order_items">
+
+                             
+                                     <input type="text" name="name" class="form-control form-control-sm mr-sm-1" placeholder="name" style="width: 100px;" required="">
+                                   
+                                 
+                                    <input type="number" id="item_price" name="price" class="form-control form-control-sm mr-sm-1" placeholder="price" min="0" step="0.01" style="width: 90px;" required="">
+                                   
+                            
+                                   <input type="number" id="item_quantity" name="quantity" class="form-control form-control-sm pr-0" placeholder="qty" min="0" style="width: 79px;" required="">
+                              
+                         </div>
+                        </div>
+
+                        <div class="height-14"></div>
+                        <div class="form-group  mb-2 row">
+                            <label for="inputSubtotal" class="col-sm-5 control-label text-right">
+                                    Subtotal (<span >$</span>):</label>
+                            <div class="col-sm-7 control-label">
+                                <span class="float-left subCost" id="subCost">0</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group  mb-2 row">
+                            <label for="inputTax" class="col-sm-5 control-label text-right">
+                                    Tax Rate %:</label>
+                            <div class="col-sm-7">
+                                <input type="number" min="0" step="0.01" class="form-control form-control-sm" id="taxInput" placeholder="" required="">
+                            </div>
+                        </div>
+                        <div class="form-group  mb-2 row pickup-only">
+                            <label for="inputOrder" class="col-sm-5 control-label text-right">
+                                    Tax (<span>$</span>):</label>
+                            <div class="col-sm-7 control-label">
+
+                                <span class="float-left" id="taxTotal">0</span>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group  mb-2 row">
+                            <label for="inputdelivery_fees" class="col-sm-5 control-label text-right">
+                                    Delivery Fees (<span >$</span>):</label>
+                            <div class="col-sm-7">
+                                <input type="number" min="0" step="0.01" class="form-control form-control-sm" id="delivery_fees" placeholder="" required="">
+                            </div>
+                        </div>
+                        <div class="form-group  mb-2 row">
+                            <label for="inputDelivery_tips" class="col-sm-5 control-label text-right">
+                                    Delivery Tips (<span class="currency_symbol_show">$</span>):</label>
+                            <div class="col-sm-7">
+                                <input type="number" min="0" step="0.01" class="form-control form-control-sm" id="delivery_tips" placeholder="" required="">
+                            </div>
+                        </div>
+
+                        <div class="form-group  mb-2 row pickup-only">
+                            <label for="inputDiscount" class="col-sm-5 control-label text-right">
+                                    Discount (<span>$</span>):</label>
+                            <div class="col-sm-7">
+                                <input type="number" min="0" step="0.01" class="form-control form-control-sm" id="discount" placeholder="" required="">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group  mb-2 row">
+                            <label for="inputAllCost" class="col-sm-5 control-label text-right">
+                                    Total(<span>$</span>):</label>
+                            <div class="col-sm-7 control-label">
+                                <span class="float-left" id="allCost">0</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group  mb-2 row">
+                            <label for="inputdInstruction" class="col-sm-5 control-label text-right">
+                                    Delivery Instruction:</label>
+                            <div class="col-sm-7">
+                                <textarea rows="2" class="form-control form-control-sm address-auto" id="d_Instruction" required=""></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group  mb-2 row">
+                            <label for="inputpMethod" class="col-sm-5 control-label text-right">
+                                    Payment Method:</label>
+                            <div class="col-sm-7">
+                                <select name="p_Method" class="form-control form-control-sm" id="p_Method">
+                                    <option value=""></option>
+                                   
+                                </select>
+                            </div>
+                        </div>
+
+
+                       
+                        <div class="text-right">
+                            <span style="color: #e279ad;">*</span>
+                             Required
+                        </div>
+                              
+                      </div>
+
+
+                  </div> 
+
+
+
+
+
+
+          </div>
+
+          <div class="footer pr-18 mt-xl-3">
+                    <hr>
+                    <button type="submit" class="btn questtag-button float-right  mr-4 ">
+                            Save</button>
+                    <button type="button" class="btn questtag-button float-right  mr-4">
+                            Cancel</button>
+                    
+                </div> 
+   
+
+       </form>
+    </div>
+  </div>
+
+
+</div>
+
+        
+</div>
+
+</body>
+
+
+</html>

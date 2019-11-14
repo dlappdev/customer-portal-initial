@@ -1,0 +1,52 @@
+.form-container{
+
+    width: 85%;
+  margin-left: 110px;
+  margin-right: -110px;
+  margin-top: 0px;
+ 
+
+}
+
+.form-header{
+
+    background-color: #586980 !important;
+    color: #ffffff !important;
+    width: 100% !important;
+    height: 50px !important;
+    font-size: 17px;
+    vertical-align: middle !important;
+    font-weight: 500;
+}
+.close{
+
+    text-transform: none !important;
+
+
+}
+.close .fa-close{
+    color:  #ffffff !important;
+}
+.questtag-button{
+    background-color: #586980 !important;
+    width: 90px;
+    height: 30px !important;
+    padding: 0px !important;
+    font-size: 13px;
+    color: #ffffff !important;
+}
+.questtag-button:hover{
+    background-color: #32364a !important;
+}
+
+#add_New_Order{
+
+    padding:0px 30px 20px 30px;
+    font-size: 14px !important;
+    font-weight: normal !important;
+}
+
+.address-auto{
+    height: 42px !important;
+    padding-top: 0px !important;
+}

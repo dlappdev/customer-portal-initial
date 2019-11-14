@@ -3,16 +3,18 @@ body {
     height: 100%;
     width: 100%;
     min-width: 100%;
+    
 }
 
 .container-custom {
-    position: absolute;
-    top: 0px;
+    position:absolute;
+    top: 55px;
     left: 0px;
     right: 0px;
     width: 100%;
     min-width: 1200px;
     min-height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -130,7 +132,7 @@ body {
 }
 
 .left-addon input {
-    padding-left: 30px;
+    padding-left: 0px;
 }
 
 .height-28 {
@@ -143,7 +145,7 @@ body {
 
 .inner-addon .fa-search {
     position: absolute;
-    padding: 20px 10px 10px 10px;
+    padding: 20px 10px 10px 17px;
     pointer-events: none;
 }
 
@@ -153,7 +155,7 @@ body {
     padding-top: 5px;
     padding-right: 5px;
     padding-bottom: 0px;
-    padding-left: 0px;
+    padding-left: 15px !important;
 }
 
 .questtag-search-input input {
@@ -161,10 +163,10 @@ body {
     padding-top: 5px;
     padding-right: 0px;
     padding-bottom: 5px;
-    padding-left: 0px;
+    padding-left: 25px;
     border-width: 2px;
     border-radius: 5px;
-    border-color: #eeeeee;
+    border-color:;
     outline: none;
     background-color: transparent;
     font-size: 11px;

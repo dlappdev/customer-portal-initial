@@ -1,12 +1,74 @@
-.padding-right-5 {
-    padding-right: 5px;
-}
+/***********navber******************/
+#navber{
+    top:0;
+    left: 0;
+    right: 0;
+    width:100%;
+    height:50px;
+    background-color: #3c3e3c;
+    overflow: hidden;
+    position:fixed;
+    margin-bottom:px;
+    z-index: 2;
+} 
+.questtag-navber{
+   padding: 0 !important;
 
+}
+.brand{
+    background-color: #232323;
+    padding-left: 10px;
+    width: 10%!important;
+    font-weight:1000;
+     height:50px;
+    border-right: 1px solid #294a7d !important;
+}
+.menu-ber{
+    width: 30% !important;
+    height:50px;
+    background-color: #1c2728;
+    border-right: 1px solid #294a7d !important;
+
+}
+.menu-ber-2{
+    width: 50% !important;
+    height:50px;
+    background-color: #3c3e3c;
+}
+.icon-menu{
+    background-color: #232323;
+    width: 10% !important;
+    height: 50px;
+    border-left: 1px solid #294a7d !important;
+}
+.menu-ber ul {
+    padding: 0px 5px 0px 80px !important;
+}
+.icon-menu ul{
+    padding: 0px 20px 0px 0px !important;
+}
+.menu-ber-2 ul{
+    padding-left: 5px !important;
+}
+.menu-ber-2 .QuestsTag-menu-btn { 
+     height: 35px !important;
+     width: 130px !important;
+     border-radius: 0 !important; 
+     background-color: #595959;
+     padding-top: 5px;
+     
+ }
 
 /*//////////////////////////////////////////////////////////////////
 [ Table ]*/
+.order-table{
 
-.dataTables_wrapper {
+    min-height: 100%;
+    height: 100%;
+    margin-top:px;
+}
+
+.datatables_wrapper {
     position: relative;
     clear: both;
     *zoom: 1;
@@ -23,30 +85,30 @@
     margin-left: 25px;
 }
 
-table.dataTable.no-footer {
+table.datatable{
     border-bottom-color: #CCCCCC;
 }
 
-table.dataTable.no-footer {
+table.datatable{
     border-bottom: 1px solid #111111;
 }
 
-table.dataTable,
-table.dataTable th,
-table.dataTable td {
+table.datatable,
+table.datatable th,
+table.datatable td {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
 }
 
-table.dataTable {
+table.datatable {
     width: 100%;
     margin: 0 auto;
     clear: both;
     border-spacing: 0;
 }
 
-.border-bottom-dddddd-imp {
+.datatable {
     border-bottom-color: #dddddd !important;
 }
 
@@ -59,38 +121,37 @@ table.dataTable {
     font-size: 13px;
 }
 
-table.dataTable thead th,
-table.dataTable thead td {
+table.datatable thead th,
+table.datatable thead td {
     padding: 5px 18px;
     border-bottom: 1px solid #111111;
 }
 
-table.dataTable thead th,
-table.dataTable tfoot th {
+table.datatable thead th,
+table.datatable tfoot th {
     font-weight: normal;
 }
 
-table.dataTable,
-table.dataTable th,
-table.dataTable td {
+table.datatable,
+table.datatable th,
+table.datatable td {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
 }
 
-table.dataTable.cell-border tbody tr:first-child th,
-table.dataTable.cell-border tbody tr:first-child td {
+table.datatable.cell-border tbody tr:first-child th,
+table.datatable.cell-border tbody tr:first-child td {
     border-top: none;
 }
 
-table.dataTable.cell-border tbody tr th:first-child,
-table.dataTable.cell-border tbody tr td:first-child {
+table.datatable.cell-border tbody tr th:first-child,
+table.datatable.cell-border tbody tr td:first-child {
     border-left: 1px solid #dddddd;
 }
 
-table.dataTable th.dt-center,
-table.dataTable td.dt-center,
-table.dataTable td.dataTables_empty {
+table.datatable th,
+table.datatable td {
     text-align: center;
 }
 
@@ -99,7 +160,30 @@ table.dataTable td.dataTables_empty {
     font-size: 12px;
 }
 
-table.dataTable tbody th,
-table.dataTable tbody td {
+table.datatable tbody th,
+table.datatable tbody td {
     padding: 8px 10px;
+}
+table.datatable tbody tr {
+  height: 40px;
+}
+
+table.datatable tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+.btn-0rder-details{
+
+    background-color: #d7e4ea;
+    border: none !important;
+    width: 100%;
+    text-decoration: none;
+    height: 30px;
+    padding-top: 8px;
+}
+
+/*******table bottom********/
+
+.text-color-grey {
+    color: #A8A9AD;
+    font-size: 13px;
 }
