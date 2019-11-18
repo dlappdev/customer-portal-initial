@@ -187,3 +187,22 @@ table.datatable tbody tr:nth-child(even) {
     color: #A8A9AD;
     font-size: 13px;
 }
+/**************** modal start****************/
+
+
+.background-color-586980{
+    background-color: #586980 !important;
+}
+.text-color-white{
+    color: white !important;
+}
+
+.close {
+    color: #fff !important;
+    opacity: 1;
+}
+
+.pac-container {
+    z-index: 10000 !important;
+}
+/************modal end*************/
