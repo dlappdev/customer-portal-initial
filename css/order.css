@@ -96,6 +96,7 @@ table.datatable td {
     box-sizing: content-box;
 }
 
+
 table.datatable {
     width: 100%;
     margin: 0 auto;
@@ -125,13 +126,7 @@ table.datatable tfoot th {
     font-weight: normal;
 }
 
-table.datatable,
-table.datatable th,
-table.datatable td {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-}
+
 
 table.datatable.cell-border tbody tr:first-child th,
 table.datatable.cell-border tbody tr:first-child td {
