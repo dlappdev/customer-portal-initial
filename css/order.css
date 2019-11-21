@@ -8,7 +8,6 @@
     background-color: #3c3e3c;
     overflow: hidden;
     position:fixed;
-    margin-bottom:px;
     z-index: 2;
 } 
 .questtag-navber{
@@ -86,11 +85,7 @@
 }
 
 table.datatable{
-    border-bottom-color: #CCCCCC;
-}
-
-table.datatable{
-    border-bottom: 1px solid #111111;
+    border-bottom: 1px solid #dddddd !important;
 }
 
 table.datatable,
@@ -108,9 +103,7 @@ table.datatable {
     border-spacing: 0;
 }
 
-.datatable {
-    border-bottom-color: #dddddd !important;
-}
+
 
 .table-wrapper table thead td,
 .table-wrapper table thead th {
@@ -202,7 +195,29 @@ table.datatable tbody tr:nth-child(even) {
     opacity: 1;
 }
 
+.questtag-button{
+    background-color: #586980 !important;
+    width: 90px;
+    height: 30px !important;
+    padding: 0px !important;
+    font-size: 13px;
+    color: #ffffff !important;
+}
+.questtag-button:hover {
+    background-color: #32364a !important;
+}
+
+.newOrder-form{
+
+    padding:0px 40px 20px 30px;
+    font-size: 14px !important;
+    font-weight: normal !important;
+}
+
 .pac-container {
     z-index: 10000 !important;
+   width: 285px;
+   padding: 0px 0px 0px 10px;
+   font-size: 14px !important;
 }
 /************modal end*************/

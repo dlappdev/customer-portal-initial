@@ -1,30 +1,31 @@
-<!DOCTYPE.html>
+<!DOCTYPE html>
 <html>
 
 <head>
     <title>New Order</title>
+     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/order.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/order.css">
     <link rel="stylesheet" href="css/form_style.css">
-    <link href="css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/timepicki.css">
-    <link href="css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXQY-KLqCQKyr0XCSt-zaL87W9OfVrjwQ&amp;v=3.exp&amp;libraries=places,drawing,geometry"></script>
+	  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXQY-KLqCQKyr0XCSt-zaL87W9OfVrjwQ&amp;v=3.exp&amp;libraries=places,drawing,geometry"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-	<script type="text/javascript" src="js/timepicki.js"></script>
+	  <script type="text/javascript" src="js/timepicki.js"></script>
     <script type="text/javascript" src="js/order.js"></script>
 </head>
 
 <body>
  <!-------------top navber------------>
  <div id="navber">       
-<nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color questtag-navber">
+<nav class="navbar navbar-expand-lg navbar-dark default-color questtag-navber">
  <div class="brand"> <a class="navbar-brand" href="#">QuestTag</a></div>
  
   <div class="collapse navbar-collapse menu-ber">
@@ -54,7 +55,7 @@
      <div class="collapse navbar-collapse icon-menu">
 
     <div class="collapse navbar-collapse icon-menu">
-    <ul class="navbar-nav ml-auto nav-flex-icons">
+    <ul class="navbar-nav ml-auto">
       <li class="nav-item">
         <a class="nav-link waves-effect waves-light">
          <i class="fa fa-wrench fa-w-16 fa-flip-horizontal"></i>
@@ -82,7 +83,7 @@
             <div class="row">
                 <div class=col-md-4>
 
-                    <div class="float-left searchOrderInput pt-10 pr-25">
+                    <div class="float-left pt-10 pr-25">
                         <div class="questtag-search-input inner-addon left-addon pl-1" style="width: 200px;">
                             <span class="fa fa-search"></span>
                             <input type="text" class="height-28 " placeholder="Search" id="table_search">
@@ -106,7 +107,7 @@
                                 </a>
                            
                              
-                                <a role="button" id="myBtn" class=" btn btn-sm btn-questtag cursor-pointer min-width-120 font-size-12">
+                                <a role="button" id="newOrder" class=" btn btn-sm btn-questtag cursor-pointer min-width-120 font-size-12">
                                     <i class="fa fa-plus float-left" style="line-height: 15px;padding: 3px;"></i> New Order
                                 </a>
                                 <a role="button" href="#" class="float-right btn btn-sm btn-questtag cursor-pointer min-width-120 font-size-12 margin-left-10">
@@ -306,19 +307,19 @@
 
 
   <!-- The Modal -->
-  <div class="modal fade" id="myModal">
+  <div class="modal fade" id="new_orderModal">
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
       
         <!-- Modal Header -->
-        <div class="modal-header pt-1 pb-1 text-color-white background-color-586980">
-          <h5 class="modal-title ">New Order</h5>
+        <div class="modal-header pt-3 pb-3 text-color-white background-color-586980">
+          <h6 class="modal-title ">New Order</h6>
           <button type="button" class="close" data-dismiss="modal">×</button>
         </div> 
         
         <!-- Modal body -->
         <div class="modal-body">
-            <form class="" action="" role="form" id="add_New_Order">
+            <form class="newOrder-form" action="" role="form" id="add_New_Order">
 
           <div class="form-horizontal ml-30 mr-60 mb-5">
 
@@ -370,16 +371,16 @@
                         </div>
 
 
-                        <div class="form-group  mb-5 row">
+                        <div class="form-group row">
                             <label for="inputcustomerAddress" class="col-sm-5 control-label text-right">
                                     Address:&nbsp;<span style="color: #e279ad;">*</span></label>
                             <div class="col-sm-7">
-                               <textarea type="text" rows="2" class="autocomplete form-control form-control-sm pac-container" id="customerAddress" required="" data-toggle="address-autocomplete" placeholder="Enter a location"id="ac1"></textarea>
+                               <textarea type="text" rows="2" class="autocomplete form-control form-control-sm pac-container " id="customerAddress" required="" data-toggle="address-autocomplete" placeholder="Enter a location"id="ac1"></textarea>
 
                             </div>
                         </div>
 
-                        <div class="form-group  mb-2 row">
+                        <div class="form-group  mb-2 mt-4 row">
                             <label for="inputDate" class="col-sm-5 control-label text-right">
                                     Delivery Date:&nbsp;<span style="color: #e279ad;">*</span></label>
                             <div class="col-sm-7">
@@ -419,14 +420,14 @@
                             </div>
                         </div>
 
-                        <div class="form-group  mb-5 row">
+                        <div class="form-group  row">
                             <label for="inputOrder" class="col-sm-5 control-label text-right">
                                      Address:&nbsp;<span style="color: #e279ad;">*</span></label>
                             <div class="col-sm-7">
-                               <textarea type="text" rows="2" class="autocomplete pac-container form-control form-control-sm" id="customerAddress" required="" data-toggle="address-autocomplete" placeholder="Enter a location"id="ac1"></textarea>
+                               <textarea type="text" rows="2" class="autocomplete form-control form-control-sm pac-container " id="customerAddress" required="" data-toggle="address-autocomplete" placeholder="Enter a location"id="ac1"></textarea>
                             </div>
                         </div>
-                        <div class="form-group  mb-2 row">
+                        <div class="form-group  mb-2 mt-4 row">
                             <label for="inputPickUpTime" class="col-sm-5 control-label text-right">
                                     Pickup Time:&nbsp;<span style="color: #e279ad;">*</span></label>
                             <div class="col-sm-7">
@@ -446,15 +447,15 @@
                             <div class="col-sm-7" id="order_items">
 
                                 <div class="form-inline">
-                                     <input type="text" name="name" class="form-control form-control-sm mr-sm-1" placeholder="name" style="width: 100px;" required="">
+                                     <input type="text" name="name[]" class="form-control form-control-sm mr-sm-1" placeholder="name" style="width: 100px;" required="">
                                    
                                  
-                                    <input type="number" id="item_price" name="price" class="form-control form-control-sm mr-sm-1" placeholder="price" min="0" step="0.01" style="width: 90px;" required="">
+                                    <input type="number" id="item_price" name="price[]" class="form-control form-control-sm mr-sm-1" placeholder="price" min="0" step="0.01" style="width: 90px;" required="">
                                    
                             
-                                   <input type="number" id="item_quantity" name="quantity" class="form-control form-control-sm pr-0" placeholder="qty" min="0" style="width: 79px;" required="">
+                                   <input type="number" id="item_quantity" name="quantity[]" class="form-control form-control-sm pr-0" placeholder="qty" min="0" style="width: 79px;" required="">
                                    </div>
-                              <a type="button" class="btn btn-sm mr-sm-2"><i class="fa fa-plus-circle"></i> </a>
+                              <a type="button" id="add_items" class="btn btn-sm mt-sm-1"><i class="fa fa-plus-circle"></i> </a>
                          </div>
                         </div>
 
@@ -520,7 +521,7 @@
                             <label for="inputdInstruction" class="col-sm-5 control-label text-right">
                                     Delivery Instruction:</label>
                             <div class="col-sm-7">
-                                <textarea rows="2" class="form-control form-control-sm address-auto" id="d_Instruction" required=""></textarea>
+                                <textarea rows="2" class="form-control form-control-sm" id="d_Instruction" required=""></textarea>
                             </div>
                         </div>
                         <div class="form-group  mb-2 row">
